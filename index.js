@@ -5,6 +5,6 @@ document.onreadystatechange = function () {
                 // $('body').css('overflow-y','scroll');
            var demo=  document.getElementsByClassName("loading-div")
               demo[0].className="attribute-changes"
-             }, 2000);
+             }, 1000);
     }
   }
