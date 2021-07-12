@@ -104,6 +104,8 @@ body {
       opacity:0.9;
       filter:alpha(opacity=90);   
       background-image: url('./1.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
 }
 .spinner1 {
     margin: 100px auto 0;
