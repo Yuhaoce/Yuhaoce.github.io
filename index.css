@@ -105,10 +105,8 @@ body {
       overflow: hidden;
       text-align: center;
       opacity:0.9;
-      filter:alpha(opacity=90);   
-      background-image: url('../1.jpg');
-      background-size: 100%;
-      background-repeat: no-repeat;
+      filter:alpha(opacity=90);      
+      background-color: rgb(148, 222, 235);
 }
 .spinner1 {
     margin: 100px auto 0;
