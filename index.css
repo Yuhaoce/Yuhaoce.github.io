@@ -93,8 +93,11 @@ body {
         -webkit-transform: scale(1.0);
     }
 }
+.color1{
+    color: wheat;
+}
 .loading-div{
-      width: 1800px;
+    width: 1800px;
       height: 720px;
       display: table-cell;
       /* 把此元素放置在父元素的中部。 */
