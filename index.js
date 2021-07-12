@@ -1,10 +1,9 @@
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
         setTimeout(() => {
-                // $(".loading-div").hide();
-                // $('body').css('overflow-y','scroll');
            var demo=  document.getElementsByClassName("loading-div")
               demo[0].className="attribute-changes"
+           document.querySelector('body').style.overflowY='scroll'
              }, 1000);
     }
   }
