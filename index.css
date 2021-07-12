@@ -94,7 +94,7 @@ body {
     }
 }
 .loading-div{
-    width: 1800px;
+      width: 1800px;
       height: 720px;
       display: table-cell;
       /* 把此元素放置在父元素的中部。 */
@@ -103,7 +103,7 @@ body {
       text-align: center;
       opacity:0.9;
       filter:alpha(opacity=90);   
-      background-image: url('./1.jpg');
+      background-image: url('../1.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
 }
