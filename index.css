@@ -96,7 +96,6 @@ body {
 .loading-div{
     width: 1800px;
       height: 720px;
-      background-image: linear-gradient(yellow,rgb(51, 255, 0));
       display: table-cell;
       /* 把此元素放置在父元素的中部。 */
       vertical-align: middle; 
