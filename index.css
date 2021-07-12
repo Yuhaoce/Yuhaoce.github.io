@@ -102,6 +102,9 @@ body {
       vertical-align: middle; 
       overflow: hidden;
       text-align: center;
+      opacity:0.9;
+      filter:alpha(opacity=90);   
+      background-image: url('./1.jpg');
 }
 .spinner1 {
     margin: 100px auto 0;
