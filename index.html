@@ -1,48 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
-    <title>个人主页</title>
     <link rel="icon" href="./1.ico" sizes="32x32">
 </head>
-
 <body>
-    <div class="loading-div">
-        <div class="spinner">
-            <div class="spinner-container container1">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
+    <div class="Biography">
+        <div class="head">
+            <div id="h1">
+                个人简历
+                </div>
+                <div id="h2">
+                    <span class="h2-1">细心从每一个细节开始 </span>
+                    <span class="h2-2">Personal resum</span>
+                </div>
+         </div>
+        <div class="head1">
+                <div class="image">
+                    <img src="学业.png" alt="">
+                    <img src="公文包.png" alt="">
+                </div>
+         </div>
+        <div class="Biography1">
+                <div class="chang1">
+                    <div class="chang"></div>
+                    <div class="chfang"></div>
+                </div>
+                <div class="chang2">
+                    <div class="changyellow"></div>
+                    <div class="chyellow"></div>
+                </div>
+         </div>
+        <div class="jib">
+                <div class="quankuang">
+                    <div class="jbxx">基本信息</div>
+                    <div class="imgg1"><img src="多边形.png" alt=""></div>
+                </div>
+                <div class="neikuang">
+                    <div class="daosan1"></div>
+                    <div class="dosan2">
+                        <div class="dosan3">
+                           <form action="#">
+                            <span class="sp1">姓&emsp;&emsp;名：</span><input type="text" style="width:110px">
+                            <span class="sp1">性&emsp;&emsp;别：</span><input type="text" style="width:110px">
+                            <span class="sp1">工作年限：</span><input type="text" style="width:110px">
+                            <span class="sp1">电&emsp;&emsp;话：</span><input type="text" style="width:110px">
+                          </form>
+                        </div>
+                        <div class="dosan4">
+                            <form action="#">
+                                <span class="sp1">年&emsp;&emsp;龄：</span><input type="text" style="width:110px">
+                                <span class="sp1">籍&emsp;&emsp;贯：</span><input type="text" style="width:110px">
+                                <span class="sp1">求职岗位：</span><input type="text" style="width:110px">
+                                <span class="sp1">邮&emsp;&emsp;箱：</span><input type="text" >
+                              </form>
+                        </div>
+                        
+                        <div class="dosan5"><img src="" alt="图片" id="imgurlt" style="width:60px"><input type="file" hidden name="image" accept="image/*">
+                            <script>
+                                (function() {
+                                const div = document.getElementsByClassName('dosan5')[0];
+                                // 返回文档中第一个元素
+                                const file = document.querySelector('input[type="file"]');
+                                function fn() {
+                                    file.oninput = function(){
+                                        if(file.files && file.files[0]) {
+                                            //  读取文件对象
+                                            let reader = new FileReader();
+                                            reader.onload = function(evt) {
+                                                let src = evt.target.result;
+                                                const img = document.getElementById('imgurlt');
+                                                imgurlt.src = src;
+                                            }
+                                            // 将文件读取为 DataURL
+                                            reader.readAsDataURL(file.files[0]);
+                                        }
+                                    }
+                                }
+                                div.addEventListener('click', function (e) {
+                                    // file模拟input点击事件
+                                    var evt = new MouseEvent("click", {
+                                        bubbles: false,
+                                        cancelable: true,
+                                        view: window,
+                                    });
+                                    file.dispatchEvent(evt,fn());
+                                }, false);
+                            })()
+                            
+                               </script></div>  
+                            </div>
+                        </div>
+         </div>
+         <div class="jiaoyu">
+            <div class="jbxx">教育背景</div>
+            <div class="imgg1"><img src="多边形.png" alt=""></div>
+            <div class="neikuang1">
+            <div class="daosan1-1"></div>
+            <div class="dosan2-1">
+                <div class="dosan3-1">
+                    <input type="text" placeholder="2019-09~2022-07">
+                    <input type="text"placeholder="辽宁金融职业学院" class="xuexiao">
+                    <input type="text"placeholder="移动应用开发（专科）" class="xuexiao">
+                    <div class="kecheng01">主修课程：</div>
+                    <textarea name="" id="kecheng" cols="30" rows="3" maxlength="300"></textarea>
+                </div>
+
             </div>
-            <div class="spinner-container container2">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
-            </div>
-            <div class="spinner-container container3">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
             </div>
         </div>
-        <div class="spinner1"><span class="color1">加载中</span>
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+        <div class="gongzuo">
+            <div class="gongzou1">工作经验</div>
+            <div class="imgg1-1"><img src="多边形.png" alt=""></div>
+            <div class="neikuang1-1">
+            <div class="daosan2-1"></div>
+            <div class="dosan2-2">
+                <div class="dosan3-1">
+                    <input type="text" placeholder="2022-09~2023-01">
+                    <input type="text"placeholder="五际(沈阳)科技有限公司" class="xuexiao" style="width:150px">
+                    <input type="text"placeholder="产品专员" class="chanpin">
+                    <ul class="ul1">
+                        <li><input type="text" placeholder="负责各部们对接"></li>
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
         </div>
-    </div>
-    <div class="main">
-        <img src="./1.jpg" />
-        <h1 style="margin:0 auto">欢迎来查看我的主页</h1>
+        <div class="gongzuo">
+            <div class="gongzou1">技能特长</div>
+            <div class="imgg1-1"><img src="多边形.png" alt=""></div>
+            <div class="neikuang1-1">
+            <div class="daosan2-1"></div>
+            <div class="dosan2-2">
+                <div class="dosan3-1">
+                    <textarea name="" id="san3-2" cols="30" rows="10" placeholder="自我评价"></textarea>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="gongzuo">
+            <div class="gongzou1">自我评价</div>
+            <div class="imgg1-1"><img src="多边形.png" alt=""></div>
+            <div class="neikuang1-1">
+            <div class="daosan2-1"></div>
+            <div class="dosan2-2">
+                <div class="dosan3-1">
+                    <textarea name="" id="san3-2" cols="30" rows="10" placeholder="自我评价"></textarea>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
