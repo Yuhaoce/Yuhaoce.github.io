@@ -8,6 +8,7 @@
     border: 1px solid black;
     margin: 0 auto;
 }
+.sp1-width{width: 76%;}
 #h1{
     color:#4E7282;
     margin: 17px 0px 0px 20px;
@@ -155,7 +156,7 @@
         height: 84px;
         background-color: #ccc;
         float: right;
-        margin-top: -75px;
+        margin-top: -11%;
         margin-right: 10px;
     }
     .Biography2{
